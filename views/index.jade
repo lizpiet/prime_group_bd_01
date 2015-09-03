@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  h1= title
+  form(id='addASSForm')
+    label(for='assignment_name') Assignment Name:&nbsp
+    input(type='text' id='assignment_name' name='assignment_name')
+    label(for='student_name') Student Name:&nbsp
+    input(type='text' id='student_name' name='student_name')
+    label(for='score') Score Name:&nbsp
+    input(type='text' id='score' name='score')
+    label(for='date_completed') Date Complete Name:&nbsp
+    input(type='text' id='date_completed' name='date_completed')
+    input(type='submit' value = 'Enter Info')
+  .assignment
+    for assignment in assignments
+        ul(id=assignment.id)
+          li= assignment.assignment_name
+          li= assignment.student_name
+          li= assignment.score
+          li= assignment.date_completed
+  script(id='assignmentList' type='text/x-handlebars-template')
+    {{#each this}}
+    ul(id='{{id}}')
+      li {{assignment_name}}
+      li {{student_name}}
+      li {{score}}
+      li {{date_completed}}
+    {{/each}}
