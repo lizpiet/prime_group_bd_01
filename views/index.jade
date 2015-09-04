@@ -20,7 +20,8 @@ block content
           li= assignment.student_name
           li= assignment.score
           li= assignment.date_completed
-        button(id=assignment._id class="deleteBtn") Delete
+          li
+            button(id=assignment._id class="deleteBtn") Delete
   script(id='assignmentList' type='text/x-handlebars-template')
     {{#each this}}
     ul(id='{{_id}}')
@@ -28,5 +29,6 @@ block content
       li {{student_name}}
       li {{score}}
       li {{date_completed}}
-    button(id='{{_id}}' class="deleteBtn") Delete
+      li
+        button(id='{{_id}}' class="deleteBtn") Delete
     {{/each}}
