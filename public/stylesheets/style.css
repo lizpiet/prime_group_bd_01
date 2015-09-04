@@ -6,3 +6,62 @@ body {
 a {
   color: #00B7FF;
 }
+
+body{
+  background-color: #fffff1;
+}
+
+h1{
+  color:#790056;
+  font-family: Tahoma;
+  font-size:92px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  padding-bottom:38px ;
+
+}
+ul{
+  list-style-type: square;
+  font-family: Georgia;
+  font-weight: bold;
+  font-style: italic;
+  color:#cc0000;
+  line-height: 22px;
+}
+form{
+  color:#01b0f0;
+  font-size: 15px;
+  width:18%;
+  font-family: Tahoma;
+  font-weight: bold;
+  /*font-style: italic;*/
+}
+
+input{
+  diplay:block;
+  font-family: Tahoma;
+  font-weight: lighter;
+  color:#000000;
+  font-style:italic;
+}
+
+#enterBtn{
+  color:#000000;
+  font-family: Tahoma;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom:45px ;
+  margin-top: 15px;
+  font-style:italic;
+
+}
+.deleteBtn{
+  color:#000000;
+  font-family: Georgia;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 32px ;
+}
+body{
+  padding-left: 120px;
+}

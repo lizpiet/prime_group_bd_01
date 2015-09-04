@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
       console.log(err);
       next(err);
     }else{
-      res.render('index', { title: 'Class ASSignments', assignments: assignments });
+      res.render('index', { title: 'Class Assignments', assignments: assignments });
     }
   });
 
